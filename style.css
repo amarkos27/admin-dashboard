@@ -23,7 +23,9 @@
     "sidebar main";
 }
 
-
+.btn:active{
+    transform: scale(0.95 );
+}
 
 /* HEADER */
 
@@ -47,9 +49,8 @@ header span{
     font-weight: 600;
 }
 
-svg{
+header img{
     width: 25px;
-    height: 25px;
 }
 
 .search input{
@@ -130,11 +131,52 @@ svg{
 /* * * * * */
 
 
-
+/* SIDEBAR */
 .container .sidebar{
     grid-area: sidebar;
     background-color: #e7eaf6;
+    padding: 15px 20px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr;
+    gap: 30px;
 }
+
+.title{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.title img{
+    width: max(40px, 30%);
+}
+
+.title span{
+    font-size: max(18px, 1.5vw);
+}
+
+.buttons,
+.settings{
+    display: grid;
+    grid-auto-rows: 30px;
+    gap: 25px;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 2%;
+}
+
+.option img{
+    width: 30px;
+}
+/* * * * * */
+
+
 
 .container .main{
     grid-area: main;
