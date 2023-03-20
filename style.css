@@ -106,7 +106,7 @@ header img{
 }
 
 .username{
-    font-size: 25px;
+    font-size: max(15px, 1.5vw);
 }
 
 .action-buttons{
